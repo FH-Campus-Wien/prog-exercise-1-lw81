@@ -54,18 +54,63 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
+        int x = 2;
+        int y = 5;
+
+        y = x + y;
+        x = y - x;
+        y = y - x;
+        System.out.print(
+                "Before Swap:" + System.lineSeparator() +
+                "x: " +
+                "y: " +
+                "After Swap:" + System.lineSeparator() +
+                "x: " + x + System.lineSeparator() +
+                "y: " + y + System.lineSeparator());
 
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+
+        if (n1 > n2){
+            System.out.print("n1: " +
+                    "n2: " +
+                    "n1 > n2" + System.lineSeparator());
+
+        }else if (n2 > n1){
+            System.out.print("n1: " +
+                    "n2: " +
+                    "n2 > n1" + System.lineSeparator());
+        }else if(n1 == n2) {
+            System.out.print("n1: " +
+                    "n2: " +
+                    "n1 == n2" + System.lineSeparator());
+        }
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
-    }
+        Scanner scanner = new Scanner(System.in);
+        int rev = scanner.nextInt();
+        if (rev < 0 || rev >= 100000){
+            System.out.print("Enter annual Revenue: " +
+                    "Invalid Revenue" + System.lineSeparator());
+        }else if (rev >= 0 && rev < 20000 ){
+            System.out.print("Enter annual Revenue: " +
+                "Poor Sales Revenue" + System.lineSeparator());
+        }else if (rev >= 20000 && rev <50000) {
+            System.out.print("Enter annual Revenue: " +
+                    "Average Sales Revenue" + System.lineSeparator());
+        }else if (rev >= 50000 && rev < 80000) {
+            System.out.print("Enter annual Revenue: " +
+                    "Good Sales Revenue" + System.lineSeparator());
+        }
+
+        }
 
     //todo Task 8
     public void getCommissionRate(){
