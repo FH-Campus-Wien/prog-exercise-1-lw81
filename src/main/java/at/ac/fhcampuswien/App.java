@@ -11,22 +11,50 @@ public class App {
 
     //todo Task 2
     public void helloRobot(){
-        // input your solution here
+        System.out.println("0123456789012345678901");
+        System.out.println("         __");
+        System.out.println(" _(\\    |@@|");
+        System.out.println("(__/\\__ \\--/ __");
+        System.out.println("   \\___|----|  |   __");
+        System.out.println("       \\ }{ /\\ )_ / _\\");
+        System.out.println("       /\\__/\\ \\__O (__");
+        System.out.println("      (--/\\--)    \\__/");
+        System.out.println("      _)(  )(_");
+        System.out.println("     `---''---`");
     }
 
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+        char a = 'Z';
+        int b = 0xface;
+        long c = 80L;
+        int cnew = (int) c;
+        float d = 44e-1f;
+        int dnew = (int) d;
+        double e = 5.5f;
+        int enew = (int)e;
+        double f = 8.88e1;
+        int fnew = (int)f;
+        double g = 99.9;
+        int gnew = (int)g;
+        int h = 012;
+        int sum = (a+b+cnew+dnew+enew+fnew+gnew+h);
+        System.out.println(sum);
     }
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        int j = scanner.nextInt();
+        int sum = i+j;
+
+        System.out.println(sum);
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+
     }
 
     //todo Task 6
