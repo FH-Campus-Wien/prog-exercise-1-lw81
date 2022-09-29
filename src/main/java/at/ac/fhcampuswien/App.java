@@ -54,8 +54,10 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        int x = 2;
-        int y = 5;
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+
 
         y = x + y;
         x = y - x;
@@ -114,17 +116,51 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int cClass = scanner.nextInt();
+        switch (cClass){
+            case 1:
+                System.out.println("Enter CommissionClass: " + "Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Enter CommissionClass: " + "Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Enter CommissionClass: " + "Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Enter CommissionClass: " + "Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Enter CommissionClass: " + "Your Commission Rate was set to 0.0");
+        }
     }
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int lyear = scanner.nextInt();
+
+        if (lyear%4 == 0 && lyear%400 == 0){
+            System.out.println("Year: " + "Leapyear");
+        }else if(lyear%100 == 0){
+            System.out.println("Year: " + "Not a Leapyear");
+        }else {
+            System.out.println("Year: " + "Not a Leapyear");
+        }
+
     }
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int n1 = num%10;
+        int n2 = ((num/10)%10)*10;
+        int n3 = num/100;
+        num = n1*100 + n2 + n3;
+        System.out.println("Number: " + num);
+
     }
 
 
