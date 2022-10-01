@@ -110,6 +110,9 @@ public class App {
         }else if (rev >= 50000 && rev < 80000) {
             System.out.print("Enter annual Revenue: " +
                     "Good Sales Revenue" + System.lineSeparator());
+        }else if (rev >= 80000 && rev < 100000) {
+            System.out.print("Enter annual Revenue: " +
+                    "Excellent Sales Revenue" + System.lineSeparator());
         }
 
         }
